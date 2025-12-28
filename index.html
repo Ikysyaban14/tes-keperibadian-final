@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tes Kepribadian MBTI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="theme-switch" class="toggle-btn">
+      <span class="toggle-icon">🌙</span>
+      <span class="toggle-text">Dark Mode</span>
+    </button>
+  </div>
+  <div class="container">
+    <h1>Tes Kepribadian MBTI</h1>
+    <div id="name-entry">
+      <h2>Masukkan Nama Anda</h2>
+      <input type="text" id="name-input" placeholder="Nama Anda" />
+      <button id="enter-name-btn">Mulai Tes</button>
+    </div>
+    <div id="progress-container" style="display:none;">
+      <div id="progress-fill"></div>
+    </div>
+    <div id="quiz-container" style="display:none;"></div>
+    <button id="start-btn" style="display:none;">Mulai Tes</button>
+    <button id="prev-btn" style="display:none;">Sebelumnya</button>
+    <button id="next-btn" style="display:none;">Selanjutnya</button>
+    <div id="result" style="display:none;"></div>
+    <div id="notification" style="display:none; color:red; margin-top:10px; font-weight:bold;"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
